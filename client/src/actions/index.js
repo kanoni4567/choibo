@@ -16,7 +16,7 @@ export function fetchPost(entryId) {
 export function fetchAll() {
 	// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
 	const res = axios.get('/getallposts');
-	console.log('fetchall');
+	// console.log('fetchall');
 	return {
 		type: FETCH_ALL,
 		payload: res
