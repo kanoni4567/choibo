@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*@import url(//fonts.googleapis.com/earlyaccess/notosansscsliced.css);*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #d3d3d3;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Roboto', Georgia, 'Times New Roman', 'Microsoft YaHei',
+    '微软雅黑', STXihei, '华文细黑', serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .blogposts {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .blogposts {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.paper {
+  position: relative;
+  margin: 5% auto;
+  width: 85%;
+  transition: 0.8s ease;
+  background: white;
+  text-align: center;
+}
+
+.paper:hover {
+  transform: translateY(-10px);
+}
+
+.imgContainer {
+  width: 100%;
+  height: 25vh;
+}
+
+img {
+  width: 95%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.previewImg {
+  width: 100%;
+}
+
+.poster {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 2vh;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #d3d3d3;
+  letter-spacing: 1px;
+  margin: 2vh 4vw;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #1f2833;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+hr {
+  width: 70%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border: 0;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+p {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1vh;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1f2833;
+}
+
+.blogview {
+  text-align: left;
+  font-size: 100%;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.blogviewtitles {
+  text-align: center;
+  font-size: 4em;
+}
+
+div iframe {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
