@@ -1,0 +1,16 @@
+{
+	"name": "choiblogserver",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Shanyu",
+	"license": "ISC",
+	"dependencies": {
+		"contentful": "^7.0.4",
+		"express": "^4.16.3"
+	}
+}
