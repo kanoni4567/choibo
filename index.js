@@ -5,10 +5,6 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
-
 app.get('/getallposts', function(req, res) {
 	// console.log('getallposts');
 	contentful.fetchAll().then(postList => {
@@ -22,6 +18,10 @@ app.get('/getpost/:id', function(request, response) {
 	contentful.fetchPost(id).then(post => {
 		response.send(post);
 	});
+});
+
+app.get('*', function(req, res) {
+	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
