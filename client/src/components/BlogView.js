@@ -39,7 +39,7 @@ class BlogView extends Component {
         </header>
         <div>
           <div className="blog">
-            <h3>BLOG</h3>
+            <div className="littletag">BLOG</div>
             <div className="blogview">{this.renderPostView()}</div>
           </div>
         </div>

@@ -15,12 +15,14 @@
 .App-title {
   font-size: 2em;
   color: white;
+  margin: 10px;
 }
 
 .App-intro {
   font-size: 1.5em;
   color: white;
   margin-left: 10vw;
+  width: 80%;
 }
 
 @keyframes App-logo-spin {

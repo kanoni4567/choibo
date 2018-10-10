@@ -77,17 +77,24 @@ img {
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 1rem;
   color: #d3d3d3;
   letter-spacing: 1px;
   margin: 2vh 4vw;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 2.6rem;
   color: #1f2833;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #1f2833;
+  letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -125,7 +132,7 @@ a {
 
 .blogviewtitles {
   text-align: center;
-  font-size: 4em;
+  font-size: 2rem;
 }
 
 div iframe {
@@ -133,4 +140,9 @@ div iframe {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.littletag {
+  padding: 2px;
+  font-weight: 500;
 }
