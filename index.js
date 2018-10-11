@@ -28,6 +28,6 @@ app.get('*', function(req, res) {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 
-setInterval(function() {
-	http.get('https://www.choibo.me');
-}, 300000);
+// setInterval(function() {
+// 	http.get('https://www.choibo.me');
+// }, 300000);
