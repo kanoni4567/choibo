@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const contentful = require('./contentful/contentful');
 const app = express();
+const http = require('http');
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
@@ -26,3 +27,7 @@ app.get('*', function(req, res) {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
+
+setInterval(function() {
+	http.get('https://www.choibo.me');
+}, 300000);
