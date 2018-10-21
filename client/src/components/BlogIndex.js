@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
-
+import BlogHeader from './blogheader';
 import { fetchAll } from '../actions';
 import './BlogIndex.css';
 
@@ -48,12 +48,7 @@ class BlogIndex extends Component {
     // console.log(this.props.posts);
     return (
       <div className="App">
-        <header className="App-header">
-          <Link to="/">
-            <h3 className="App-title">Choiblog</h3>
-            <p className="App-intro">Shanyu's home on the web</p>
-          </Link>
-        </header>
+        <BlogHeader />
         <div>
           <div className="blog">
             <div className="littletag">BLOG</div>

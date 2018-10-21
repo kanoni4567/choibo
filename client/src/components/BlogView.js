@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-// import _ from 'lodash';
 import { Markdown } from 'react-showdown';
-// import { fetchAll } from '../actions';
+import BlogHeader from './blogheader';
 import { fetchPost } from '../actions';
 import './BlogIndex.css';
 
@@ -32,11 +30,7 @@ class BlogView extends Component {
     // console.log(this.props.current_post);
     return (
       <div className="App">
-        <header className="App-header">
-          <Link to="/">
-            <h3 className="App-title">Choiblog</h3>
-          </Link>
-        </header>
+        <BlogHeader />
         <div>
           <div className="blog">
             <div className="littletag">BLOG</div>
