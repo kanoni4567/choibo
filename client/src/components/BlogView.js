@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Markdown } from 'react-showdown';
-import BlogHeader from './blogheader';
+import BlogHeader from './BlogHeader';
 import { fetchPost } from '../actions';
 import './BlogIndex.css';
 

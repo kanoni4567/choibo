@@ -8,6 +8,7 @@ import promise from 'redux-promise';
 
 import BlogIndex from './components/BlogIndex';
 import BlogView from './components/BlogView';
+import LoginView from './components/LoginView';
 import reducers from './reducers';
 import './style/style.css';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
 			<div>
+				<Route path="/login" component={LoginView} />
 				<Route path="/blog/:id" component={BlogView} />
 				<Route exact path="/" component={BlogIndex} />
 			</div>
