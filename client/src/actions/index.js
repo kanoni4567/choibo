@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const FETCH_POST = 'fetch_post';
 export const FETCH_ALL = 'fetch_all';
+export const FETCH_USER = 'fetch_user';
 
 export function fetchPost(entryId) {
 	// request an entry with the specified ID from the space defined at the top, using a space-specific access token.
@@ -23,6 +24,14 @@ export function fetchAll() {
 	};
 }
 
+export function fetchUser() {
+	const res = axios.get('/api/currentuser');
+
+	return {
+		type: FETCH_USER,
+		payload: res
+	};
+}
 // export fetchPost = (entryId) => {
 // 	// request an entry with the specified ID from the space defined at the top, using a space-specific access token.
 // 	async dispatch => {

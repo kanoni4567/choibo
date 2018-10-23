@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import Formdata from 'form-data';
+import axios from 'axios';
 import Input from './Input';
 import Button from './Button';
 
@@ -22,8 +24,22 @@ class LoginFormContainer extends Component {
 	handleFormSubmit(e) {
 		e.preventDefault();
 		let userData = this.state.loginuser;
-
-		console.log(userData);
+		// let formData = new Formdata();
+		// formData.set('username', userData.username);
+		// formData.set('password', userData.password);
+		axios
+			.post('/api/login', {
+				username: userData.username,
+				password: userData.password
+			})
+			.then(res => {
+				// console.log(res.data);
+			})
+			.catch(err => {
+				console.log('log in server error');
+				console.log(err);
+			});
+		// console.log(userData);
 	}
 
 	handleInput(e) {
@@ -37,8 +53,8 @@ class LoginFormContainer extends Component {
 						[name]: value
 					}
 				};
-			},
-			() => console.log(this.state.loginuser)
+			}
+			// () => console.log(this.state.loginuser)
 		);
 	}
 
