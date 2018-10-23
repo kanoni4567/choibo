@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BlogHeader from './BlogHeader';
+import BlogHeader from './BlogHeader.js';
 import LoginFormContainer from './LoginFormContainer';
 
 class LoginView extends Component {
