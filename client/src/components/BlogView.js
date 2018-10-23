@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Markdown } from 'react-showdown';
-import BlogHeader from './BlogHeader';
 import { fetchPost } from '../actions';
+import BlogHeader from './BlogHeader';
 import './BlogIndex.css';
 
 class BlogView extends Component {
