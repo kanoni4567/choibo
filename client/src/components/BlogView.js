@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Markdown } from 'react-showdown';
 import { fetchPost } from '../actions';
-import BlogHeader from './BlogHeader.js';
+import BlogHeader from './blogheader.js';
 import './BlogIndex.css';
 
 class BlogView extends Component {
